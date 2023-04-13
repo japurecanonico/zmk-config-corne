@@ -20,10 +20,10 @@
             //                    | GUI | LWR | SPC |   | ENT | RSE  | ALT |
 
             bindings = <
-       &kp ESC        &kp SQT  &kp COMMA    &kp DOT  &kp P      &kp Y      &kp F  &kp G     &kp C  &kp R  &kp L      &kp SLASH
-&kp LEFT_SHIFT          &kp A      &kp O      &kp E  &kp U      &kp I      &kp D  &kp H     &kp T  &kp N  &kp S      &kp MINUS
-      &kp LGUI  &kp SEMICOLON      &kp Q      &kp J  &kp K      &kp X      &kp B  &kp M     &kp W  &kp V  &kp Z  &kp RIGHT_ALT
-                                          &kp LCTRL  &mo 2  &kp SPACE    &kp RET  &mo 1  &kp BSPC
+   &kp ESC        &kp SQT  &kp COMMA    &kp DOT  &kp P      &kp Y      &kp F  &kp G     &kp C  &kp R  &kp L      &kp SLASH
+&kp LSHIFT          &kp A      &kp O      &kp E  &kp U      &kp I      &kp D  &kp H     &kp T  &kp N  &kp S     &kp RSHIFT
+  &kp LGUI  &kp SEMICOLON      &kp Q      &kp J  &kp K      &kp X      &kp B  &kp M     &kp W  &kp V  &kp Z  &kp RIGHT_ALT
+                                      &kp LCTRL  &mo 2  &kp SPACE    &kp RET  &mo 1  &kp BSPC
             >;
         };
 
@@ -35,10 +35,10 @@
             //                    | GUI |     | SPC |   | ENT |     | ALT |
 
             bindings = <
-&trans     &none  &kp CARET  &kp GRAVE  &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS    &kp KP_NUMBER_0  &kp KP_NUMBER_1  &kp KP_NUMBER_2  &kp KP_NUMBER_3  &kp KP_NUMBER_4  &trans
-&trans     &none   &kp PIPE   &kp EXCL      &kp LEFT_BRACKET      &kp RIGHT_BRACKET    &kp KP_NUMBER_5  &kp KP_NUMBER_6  &kp KP_NUMBER_7  &kp KP_NUMBER_8  &kp KP_NUMBER_9  &trans
-&trans  &kp HASH     &kp AT   &kp DLLR        &kp LEFT_BRACE        &kp RIGHT_BRACE       &kp KP_EQUAL         &kp PLUS  &kp KP_MULTIPLY     &kp KP_SLASH      &kp PERCENT  &trans
-                                &trans                &trans              &kp SPACE            &kp RET           &trans       &kp DELETE
+&trans        &none  &kp CARET  &kp GRAVE  &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS    &kp KP_NUMBER_0  &kp KP_NUMBER_1  &kp KP_NUMBER_2  &kp KP_NUMBER_3  &kp KP_NUMBER_4  &trans
+&trans  &kp PERCENT   &kp PIPE   &kp EXCL      &kp LEFT_BRACKET      &kp RIGHT_BRACKET    &kp KP_NUMBER_5  &kp KP_NUMBER_6  &kp KP_NUMBER_7  &kp KP_NUMBER_8  &kp KP_NUMBER_9  &trans
+&trans     &kp HASH     &kp AT   &kp DLLR        &kp LEFT_BRACE        &kp RIGHT_BRACE       &kp KP_EQUAL         &kp PLUS        &kp MINUS  &kp KP_MULTIPLY     &kp KP_SLASH  &trans
+                                   &trans                &trans              &kp SPACE            &kp RET           &trans       &kp DELETE
             >;
         };
 
