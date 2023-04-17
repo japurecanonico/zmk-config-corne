@@ -51,7 +51,7 @@
     keymap {
         compatible = "zmk,keymap";
 
-        dvorak_layer {
+        qwerty_layer {
             // -----------------------------------------------------------------------------------------
             // |  TAB |  Q  |  W  |  E  |  R  |  T  |   |  Y  |  U   |  I  |  O  |  P  | BKSP |
             // | CTRL |  A  |  S  |  D  |  F  |  G  |   |  H  |  J   |  K  |  L  |  ;  |  '   |
@@ -59,10 +59,10 @@
             //                    | GUI | LWR | SPC |   | ENT | RSE  | ALT |
 
             bindings = <
-   &kp TAB      &kp SLASH  &kp COMMA    &kp DOT  &kp P      &kp Y      &kp F  &kp G     &kp C  &kp R  &kp L        &kp ESC
-&kp LSHIFT          &kp A      &kp O      &kp E  &kp U      &kp I      &kp D  &kp H     &kp T  &kp N  &kp S     &kp RSHIFT
-  &kp LGUI  &kp SEMICOLON      &kp Q      &kp J  &kp K      &kp X      &kp B  &kp M     &kp W  &kp V  &kp Z  &kp RIGHT_ALT
-                                      &kp LCTRL  &mo 2  &kp SPACE    &kp RET  &mo 1  &kp BSPC
+   &kp TAB  &kp Q  &kp W      &kp E  &kp R      &kp T      &kp Y  &kp U      &kp I    &kp O          &kp P        &kp ESC
+&kp LSHIFT  &kp A  &kp S      &kp D  &kp F      &kp G      &kp H  &kp J      &kp K    &kp L  &kp SEMICOLON     &kp RSHIFT
+  &kp LGUI  &kp Z  &kp X      &kp C  &kp V      &kp B      &kp N  &kp M  &kp COMMA  &kp DOT      &kp SLASH  &kp RIGHT_ALT
+                          &kp LCTRL  &mo 2  &kp SPACE    &kp RET  &mo 1   &kp BSPC
             >;
         };
 
