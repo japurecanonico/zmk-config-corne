@@ -46,6 +46,12 @@
             #binding-cells = <0>;
             bindings = <&sk LCTRL &kp Z>;
         };
+        copyline_macro: copyline_macro {
+            compatible = "zmk,behavior-macro";
+            label = "COPYLINE_MACRO";
+            #binding-cells = <0>;
+            bindings = <&kp LEFT_ALT &kp LEFT_SHIFT &kp DOWN>;
+        };
     };
 
     keymap {
@@ -89,10 +95,10 @@
             //                    | GUI |     | SPC |   | ENT |     | ALT |
 
             bindings = <
-&trans        &mo 3        &none      &kp UP        &none      &kp HOME     &kp F1   &kp F2      &kp F3   &kp F4      &mo 3  &none
-&trans  &save_macro     &kp LEFT    &kp DOWN    &kp RIGHT       &kp END     &kp F5   &kp F6      &kp F7   &kp F8  &kp PG_UP  &none
-&trans  &undo_macro  &find_macro  &cut_macro  &copy_macro  &paste_macro     &kp F9  &kp F10     &kp F11  &kp F12  &kp PG_DN  &none
-                                      &trans       &trans     &kp SPACE    &kp RET   &trans  &kp DELETE
+&trans        &mo 3  &kp HOME      &kp UP      &kp END   &find_macro     &kp F1   &kp F2      &kp F3   &kp F4      &mo 3  &trans
+&trans  &save_macro  &kp LEFT    &kp DOWN    &kp RIGHT         &none     &kp F5   &kp F6      &kp F7   &kp F8  &kp PG_UP  &trans
+&trans  &undo_macro     &none  &cut_macro  &copy_macro  &paste_macro     &kp F9  &kp F10     &kp F11  &kp F12  &kp PG_DN  &trans
+                                   &trans       &trans     &kp SPACE    &kp RET   &trans  &kp DELETE
             >;
         };
 
