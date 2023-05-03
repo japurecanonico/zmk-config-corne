@@ -65,10 +65,10 @@
             //                    | GUI | LWR | SPC |   | ENT | RSE  | ALT |
 
             bindings = <
-   &kp TAB    &kp SQT  &kp COMMA    &kp DOT  &kp P      &kp Y      &kp F  &kp G     &kp C  &kp R  &kp L        &kp ESC
-&kp LSHIFT      &kp A      &kp O      &kp E  &kp U      &kp I      &kp D  &kp H     &kp T  &kp N  &kp S     &kp RSHIFT
-  &kp LGUI  &kp SLASH      &kp Q      &kp J  &kp K      &kp X      &kp B  &kp M     &kp W  &kp V  &kp Z  &kp RIGHT_ALT
-                                  &kp LCTRL  &mo 2  &kp SPACE    &kp RET  &mo 1  &kp BSPC
+     &kp TAB    &kp SQT  &kp COMMA    &kp DOT  &kp P      &kp Y      &kp F  &kp G     &kp C  &kp R  &kp L          &kp ESC
+  &kp LSHIFT      &kp A      &kp O      &kp E  &kp U      &kp I      &kp D  &kp H     &kp T  &kp N  &kp S  &kp RIGHT_SHIFT
+&kp LEFT_ALT  &kp SLASH      &kp Q      &kp J  &kp K      &kp X      &kp B  &kp M     &kp W  &kp V  &kp Z     &kp LEFT_GUI
+                                    &kp LCTRL  &mo 2  &kp SPACE    &kp RET  &mo 1  &kp BSPC
             >;
         };
 
@@ -95,10 +95,10 @@
             //                    | GUI |     | SPC |   | ENT |     | ALT |
 
             bindings = <
-&trans        &mo 3  &kp HOME      &kp UP      &kp END   &find_macro     &kp F1   &kp F2      &kp F3   &kp F4      &mo 3  &trans
-&trans  &save_macro  &kp LEFT    &kp DOWN    &kp RIGHT         &none     &kp F5   &kp F6      &kp F7   &kp F8  &kp PG_UP  &trans
-&trans  &undo_macro     &none  &cut_macro  &copy_macro  &paste_macro     &kp F9  &kp F10     &kp F11  &kp F12  &kp PG_DN  &trans
-                                   &trans       &trans     &kp SPACE    &kp RET   &trans  &kp DELETE
+&trans        &mo 3         &kp HOME      &kp UP      &kp END   &find_macro     &kp F1   &kp F2      &kp F3   &kp F4      &mo 3  &trans
+&trans  &save_macro         &kp LEFT    &kp DOWN    &kp RIGHT         &none     &kp F5   &kp F6      &kp F7   &kp F8  &kp PG_UP  &trans
+&trans  &undo_macro  &copyline_macro  &cut_macro  &copy_macro  &paste_macro     &kp F9  &kp F10     &kp F11  &kp F12  &kp PG_DN  &trans
+                                          &trans       &trans     &kp SPACE    &kp RET   &trans  &kp DELETE
             >;
         };
 
